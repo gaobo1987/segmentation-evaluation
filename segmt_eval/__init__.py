@@ -30,7 +30,7 @@ def evaluate_ner(gold: list, pred: list, labels: list):
 # strict == False: prediction and gold values are lower-cased, stripped of accents and margin spaces
 # strict == True: strict comparison between prediction and gold
 def evaluate(data, key: str, strict=False):
-    if os.path.isfile(data) and data[-4:] == 'json':
+    if isinstance(data, str) and os.path.isfile(data) and data[-4:] == 'json':
         data = load_json(data)
     elif not isinstance(data, list):
         raise Exception("The data input is neither a json file path nor a list.")
