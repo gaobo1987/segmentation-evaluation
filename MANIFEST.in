@@ -1,0 +1,6 @@
+global-exclude *.ipynb
+global-exclude *.pyc
+global-exclude *.md
+global-exclude *.json
+
+graft segmt_eval

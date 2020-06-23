@@ -1,0 +1,4 @@
+tqdm
+setuptools
+wheel
+numpy
