@@ -1,6 +1,6 @@
 import pytest
 
-from segmt_eval.ner_evaluation import Evaluator
+from segmt_eval.metrics.ner_evaluation import Evaluator
 
 
 def test_evaluator_simple_case():

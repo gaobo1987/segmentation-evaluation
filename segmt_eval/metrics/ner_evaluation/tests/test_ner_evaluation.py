@@ -1,10 +1,10 @@
-from segmt_eval.ner_evaluation import Entity
-from segmt_eval.ner_evaluation import compute_metrics
-from segmt_eval.ner_evaluation import collect_named_entities
-from segmt_eval.ner_evaluation import find_overlap
-from segmt_eval.ner_evaluation import compute_actual_possible
-from segmt_eval.ner_evaluation import compute_precision_recall
-from segmt_eval.ner_evaluation import compute_precision_recall_wrapper
+from segmt_eval.metrics.ner_evaluation import Entity
+from segmt_eval.metrics.ner_evaluation import compute_metrics
+from segmt_eval.metrics.ner_evaluation import collect_named_entities
+from segmt_eval.metrics.ner_evaluation import find_overlap
+from segmt_eval.metrics.ner_evaluation import compute_actual_possible
+from segmt_eval.metrics.ner_evaluation import compute_precision_recall
+from segmt_eval.metrics.ner_evaluation import compute_precision_recall_wrapper
 
 
 def test_collect_named_entities_same_type_in_sequence():

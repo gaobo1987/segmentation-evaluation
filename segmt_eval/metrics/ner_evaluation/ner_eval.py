@@ -1,12 +1,6 @@
-import logging
 from collections import namedtuple
 from copy import deepcopy
 
-logging.basicConfig(
-    format="%(asctime)s %(name)s %(levelname)s: %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
-    level="DEBUG",
-)
 
 Entity = namedtuple("Entity", "e_type start_offset end_offset")
 
@@ -53,11 +47,6 @@ class Evaluator():
 
 
     def evaluate(self):
-
-        logging.info(
-            "Imported %s predictions for %s true examples",
-            len(self.pred), len(self.true)
-        )
 
         for true_ents, pred_ents in zip(self.true, self.pred):
 
